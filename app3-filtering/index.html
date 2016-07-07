@@ -3,7 +3,7 @@
 	
 	Name: <input ng-model='filterText.name' placeholder="filter by...">
 	Phone: <input ng-model='filterText.phone' placeholder="filter by...">
-	<div ng-repeat="person in people | filter: filterText">
+	<div ng-repeat="person in people | filter: filterText | orderBy: 'name' ">
 		
 		<strong>{{ person.name }}</strong> <br>
 		{{ person.email }} <br>
