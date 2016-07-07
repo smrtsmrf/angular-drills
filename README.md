@@ -3,10 +3,10 @@
 ## Set 1
 
 ``1``
-Create a basic angular app where you type in a text box and it shows up as text somewhere else on the screen.
+<!-- Create a basic angular app where you type in a text box and it shows up as text somewhere else on the screen. -->
 
 ``2``
-Create an app where there is an array of data in the service that is shown on the screen as a list
+<!-- Create an app where there is an array of data in the service that is shown on the screen as a list -->
 
 ``3``
 Create an app where there is a list of data on the screen (stored in a service) where you can type to filter what's shown in the list
