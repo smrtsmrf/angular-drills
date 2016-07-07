@@ -1,14 +1,21 @@
 <html ng-app="app3">
+<head>
+	<meta charset="utf-8">
+	<title>App 3</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 <body ng-controller="app3Ctrl">
 	
 	Name: <input ng-model='filterText.name' placeholder="filter by...">
 	Phone: <input ng-model='filterText.phone' placeholder="filter by...">
-	<div ng-repeat="person in people | filter: filterText | orderBy: 'name' ">
+	<div ng-repeat="person in people | filter: filterText | orderBy: 'name'" ng-class="{awesome: person.awesome}">
 		
-		<strong>{{ person.name }}</strong> <br>
+		<strong>{{ person.name }}</strong>
+		<button ng-click="person.awesome = !person.awesome">Awesome!</button> <br>
 		{{ person.email }} <br>
 		{{ person.dateEmployed }} <br>
 		{{ person.phone }} <br>
+		<hr/>
 	</div>
 				
 	
