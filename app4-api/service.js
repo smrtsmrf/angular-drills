@@ -1,14 +1,17 @@
 angular.module('apiApp').service('apiSvc', ['$http','$q', function ($http, $q) {
 	this.getAllPokemon = function (offset) {
 		var limit = offset == 0  ? 'limit=181' : 'limit=180'
-		var offset = '&offset=' + offset;
+		var stroffset = '&offset=' + offset;
 
 		var defer = $q.defer();
 		$http({
 			method: 'GET',
-			url: 'http://pokeapi.co/api/v2/pokemon/?' + limit + offset
+			url: 'http://pokeapi.co/api/v2/pokemon/?' + limit + stroffset
 		}).then(function (response) {
 			var results = response.data.results;
+			for (var i = 0; i < results.length; i++) {
+				results[i]['num'] = i+1+offset;
+			};
 			defer.resolve(results);
 		})
 		return defer.promise;
@@ -36,9 +39,6 @@ angular.module('apiApp').service('apiSvc', ['$http','$q', function ($http, $q) {
 }])
 
 
-// sort by # not working
-// neither is filter by #
-// css with header and form
 // loading icon like in weather app
 
 // routes?
