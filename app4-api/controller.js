@@ -46,7 +46,7 @@ angular.module('apiApp').controller('apiCtrl', ['$scope', 'apiSvc', function ($s
 		      columnDefs: [
 		      {field: 'num', displayName: '#', width: '50px', cellClass: 'grid-align', pinned: true },
 		      {field: 'name', displayName: 'Name', width: '145px', cellClass: 'grid-align', pinned: true},
-		      {field: 'url', displayName: 'Get More Info', width: '120px',cellTemplate: '<button ng-click="getPokeInfo(row.getProperty(col.field))">More</button>', cellClass: 'grid-align', pinned: true},
+		      {field: 'url', displayName: 'Get More Info', width: '150px',cellTemplate: '<button ng-click="getPokeInfo(row.getProperty(col.field))">More</button>', cellClass: 'grid-align', pinned: true},
 		      ]})
 	};
 

@@ -12,10 +12,10 @@
 <!-- Create an app where there is a list of data on the screen (stored in a service) where you can type to filter what's shown in the list -->
 
 ``4``
-Create an app hitting an api (swapi.co, birdapi.com, pokeapi, [smurfs](http://smurfs.devmounta.in/smurfs/), marvel api, etc)
+<!-- Create an app hitting an api (swapi.co, birdapi.com, pokeapi, [smurfs](http://smurfs.devmounta.in/smurfs/), marvel api, etc) -->
 
 ``5``
-Make a larger app if you have time.
+<!-- Make a larger app if you have time. -->
 
 ## Set 2
 
