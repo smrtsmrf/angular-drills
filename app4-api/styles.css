@@ -3,14 +3,71 @@ html, body {
   width: 100%;
 }
 
+header {
+  position: fixed;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
 h1 {
   text-align: center;
+  display: inline-block;
 }
+
+.navbar-form {
+  padding-top: 25px;
+  margin-right: -160px;
+}
+
+#back {
+  display: inline-block;
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+}
+
+#info {
+    padding-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    /* align-content: center; */
+}
+
+.pics {
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    /* margin: auto; */
+    /* text-align: center; */
+}
+
+#data {
+  text-align: center;
+}
+
+
 .gridStyle {
     border: 1px solid rgb(212,212,212);
     width: 100%; 
-    height: 1200px;
+    height: 7300px;
     min-height: 100%;
+}
+
+.grid-align {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  width: 25%;
+  margin-top: 120px;
 }
 
 .ngTopPanel {
