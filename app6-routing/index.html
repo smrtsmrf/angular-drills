@@ -1,9 +1,32 @@
-<html>
-	<body>
-		<h1>app6 - routing</h1>
+<html ng-app="routingApp">
+	<head>
+		<meta charset="utf-8">
+		<title>app6 - routing</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body ng-controller="controller">
+		<nav>
+			<div >
+				<a ng-class="{active: $state.includes('home')}" ui-sref="home">Home</a>
+			</div>
+			<div >
+				<a ng-class="{active: $state.includes('signup')}" ui-sref="signup" >Sign up</a>
+			</div>
+			<div >
+				<a ng-class="{active: $state.includes('details')}" ui-sref="details">Details</a>
+			</div>	
+		</nav>	
+
+		<ui-view autoscroll='false'></ui-view>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="myHeaderDirective.js"></script>
 	</body>
 </html>

@@ -1,0 +1,38 @@
+nav {
+	background-color: #000;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	padding: 10;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+.active {
+	color: white;
+}
+
+#buttons, #other {
+	text-align: center;
+}
+
+h2 {
+	font-size: 30px;
+	padding: 10;
+}
+
+#info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}

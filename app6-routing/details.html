@@ -1,0 +1,27 @@
+<my-header></my-header>
+
+<div id="buttons">
+	<button ng-click="getAPOD('today')">Today</button>
+	<button ng-click="getAPOD('yest')" >Yesterday</button>
+	<button ng-click="shown = !shown">Other Day</button>
+</div>
+<!-- initially hide these -->
+<div id="other" ng-show="shown">
+	<input ng-model="otherDate" placeholder="Choose a day...">
+	<button ng-click="getAPOD('other')" >Go!</button>
+</div>
+
+<section id="info">
+	<h2>
+		{{data.date | date: "fullDate"}}
+	</h2>
+	<div>
+		<img ng-src="{{data.url}}">
+	</div>
+	<div ng-if="data.copyright">
+		<i class="fa fa-copyright" aria-hidden="true"></i>{{data.copyright}}
+	</div>
+	<div>
+		{{data.explanation}}
+	</div>
+</section>
